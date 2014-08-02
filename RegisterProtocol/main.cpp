@@ -20,42 +20,42 @@
 
 
 int main(int argc, const char* argv[]) {
-	
-	// Register to IE
-	// http://msdn.microsoft.com/en-us/library/ie/aa767914(v=vs.85).aspx
+
+  // Register to IE
+  // http://msdn.microsoft.com/en-us/library/ie/aa767914(v=vs.85).aspx
 #ifdef _WIN32	
-	// set key if not exists
-	ATL::CRegKey reg;
-	if (reg.Open(HKEY_CLASSES_ROOT, APP_URI) != ERROR_SUCCESS) {
-		if (reg.Create(HKEY_CLASSES_ROOT, APP_URI) == ERROR_SUCCESS) {
-			// set value. {default value: "URL:MyApp Protocol"}
-			reg.SetStringValue(NULL, _T("URL:MyApp Protocol"));
+  // set key if not exists
+  ATL::CRegKey reg;
+  if (reg.Open(HKEY_CLASSES_ROOT, APP_URI) != ERROR_SUCCESS) {
+    if (reg.Create(HKEY_CLASSES_ROOT, APP_URI) == ERROR_SUCCESS) {
+      // set value. {default value: "URL:MyApp Protocol"}
+      reg.SetStringValue(NULL, _T("URL:MyApp Protocol"));
 
-			// set value. {URL Protocol: ""}
-			reg.SetStringValue(_T("URL Protocol"), _T(""));
+      // set value. {URL Protocol: ""}
+      reg.SetStringValue(_T("URL Protocol"), _T(""));
 
-			// create subkey('DefaultIcon')
-			if (reg.Create(HKEY_CLASSES_ROOT, REG_KEY_DEFAULT_IC) == ERROR_SUCCESS) {
-				// set value. {default value: "'exe path', icon index"}
-				std::wstring value(_T("\""));
-				value.append(REG_VAL_EXE_PATH);
-				value.append(_T("\", 0"));
-				reg.SetStringValue(NULL, value.c_str());
-			}
+      // create subkey('DefaultIcon')
+      if (reg.Create(HKEY_CLASSES_ROOT, REG_KEY_DEFAULT_IC) == ERROR_SUCCESS) {
+        // set value. {default value: "'exe path', icon index"}
+        std::wstring value(_T("\""));
+        value.append(REG_VAL_EXE_PATH);
+        value.append(_T("\", 0"));
+        reg.SetStringValue(NULL, value.c_str());
+      }
 
-			// create subkey('shell/open/command');
-			if (reg.Create(HKEY_CLASSES_ROOT, REG_KEY_COMMAND) == ERROR_SUCCESS) {
-				// set value. {default value: "'exe path' '%1'"}
-				std::wstring value(_T("\""));
-				value.append(REG_VAL_EXE_PATH);
-				value.append(_T("\" \"%1\""));
-				reg.SetStringValue(NULL, value.c_str());
-			}
-		}
+      // create subkey('shell/open/command');
+      if (reg.Create(HKEY_CLASSES_ROOT, REG_KEY_COMMAND) == ERROR_SUCCESS) {
+        // set value. {default value: "'exe path' '%1'"}
+        std::wstring value(_T("\""));
+        value.append(REG_VAL_EXE_PATH);
+        value.append(_T("\" \"%1\""));
+        reg.SetStringValue(NULL, value.c_str());
+      }
+    }
 
-		reg.Close();
-	}
+    reg.Close();
+  }
 #endif
 
-	return 0;
+  return 0;
 }

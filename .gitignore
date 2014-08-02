@@ -3,6 +3,7 @@
 *.lo
 *.o
 *.obj
+*.ipch
 
 # Compiled Dynamic libraries
 *.so
@@ -19,3 +20,6 @@
 *.exe
 *.out
 *.app
+*.sdf
+*.opensdf
+*.suo
