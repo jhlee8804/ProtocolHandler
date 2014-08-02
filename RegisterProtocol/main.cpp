@@ -8,11 +8,11 @@
 #include <atlbase.h>
 #endif
 
-#define APP_URI	_T("myapp")
+#define APP_URI             _T("myapp")
 
-#define REG_KEY_DEFAULT_IC	APP_URI _T("\\DefaultIcon")
-#define REG_KEY_COMMAND			APP_URI _T("\\shell\\open\\command")
-#define REG_VAL_EXE_PATH		_T("D:\\workspace\\example\\CustomProtocol\\Debug\\myapp.exe")
+#define REG_KEY_DEFAULT_IC  APP_URI _T("\\DefaultIcon")
+#define REG_KEY_COMMAND     APP_URI _T("\\shell\\open\\command")
+#define REG_VAL_EXE_PATH    _T("D:\\workspace\\example\\CustomProtocol\\Debug\\myapp.exe")
 
 
 // NOTE: 관리자 권한 필요. 프로젝트 우측 클릭 -> Properties -> Linker -> Manifest File에서
