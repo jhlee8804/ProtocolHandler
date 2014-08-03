@@ -1,66 +1,78 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="json">
-      <UniqueIdentifier>{826e8a9e-5c91-46c6-9252-6645ebf1daef}</UniqueIdentifier>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="..\..\lib\json\json_reader.cpp">
+      <Filter>lib\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\json\json_value.cpp">
+      <Filter>lib\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\json\json_writer.cpp">
+      <Filter>lib\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\protocol_handler\main.cpp">
+      <Filter>source\protocol_handler</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="lib">
+      <UniqueIdentifier>{8c76e870-6068-4930-a886-d79cc8f60852}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\json">
+      <UniqueIdentifier>{7a01c661-3c11-4ae8-913f-56dacf7d6aa5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{b1652155-b9f1-4a94-acbb-82fc6e6c4f75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\protocol_handler">
+      <UniqueIdentifier>{cf7031e1-1f22-4e79-b6a5-59890ba4c775}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="json\config.h">
-      <Filter>json</Filter>
+    <ClInclude Include="..\..\lib\json\assertions.h">
+      <Filter>lib\json</Filter>
     </ClInclude>
-    <ClInclude Include="json\features.h">
-      <Filter>json</Filter>
+    <ClInclude Include="..\..\lib\json\autolink.h">
+      <Filter>lib\json</Filter>
     </ClInclude>
-    <ClInclude Include="json\forwards.h">
-      <Filter>json</Filter>
+    <ClInclude Include="..\..\lib\json\config.h">
+      <Filter>lib\json</Filter>
     </ClInclude>
-    <ClInclude Include="json\json.h">
-      <Filter>json</Filter>
+    <ClInclude Include="..\..\lib\json\features.h">
+      <Filter>lib\json</Filter>
     </ClInclude>
-    <ClInclude Include="json\reader.h">
-      <Filter>json</Filter>
+    <ClInclude Include="..\..\lib\json\forwards.h">
+      <Filter>lib\json</Filter>
     </ClInclude>
-    <ClInclude Include="json\value.h">
-      <Filter>json</Filter>
+    <ClInclude Include="..\..\lib\json\json.h">
+      <Filter>lib\json</Filter>
     </ClInclude>
-    <ClInclude Include="json\writer.h">
-      <Filter>json</Filter>
+    <ClInclude Include="..\..\lib\json\json_batchallocator.h">
+      <Filter>lib\json</Filter>
     </ClInclude>
-    <ClInclude Include="json\assertions.h">
-      <Filter>json</Filter>
+    <ClInclude Include="..\..\lib\json\json_tool.h">
+      <Filter>lib\json</Filter>
     </ClInclude>
-    <ClInclude Include="json\autolink.h">
-      <Filter>json</Filter>
+    <ClInclude Include="..\..\lib\json\reader.h">
+      <Filter>lib\json</Filter>
     </ClInclude>
-    <ClInclude Include="json\json_batchallocator.h">
-      <Filter>json</Filter>
+    <ClInclude Include="..\..\lib\json\value.h">
+      <Filter>lib\json</Filter>
     </ClInclude>
-    <ClInclude Include="json\json_tool.h">
-      <Filter>json</Filter>
+    <ClInclude Include="..\..\lib\json\writer.h">
+      <Filter>lib\json</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="json\json_reader.cpp">
-      <Filter>json</Filter>
-    </ClCompile>
-    <ClCompile Include="json\json_value.cpp">
-      <Filter>json</Filter>
-    </ClCompile>
-    <ClCompile Include="json\json_writer.cpp">
-      <Filter>json</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="json\json_internalarray.inl">
-      <Filter>json</Filter>
+    <None Include="..\..\lib\json\json_internalarray.inl">
+      <Filter>lib\json</Filter>
     </None>
-    <None Include="json\json_internalmap.inl">
-      <Filter>json</Filter>
+    <None Include="..\..\lib\json\json_internalmap.inl">
+      <Filter>lib\json</Filter>
     </None>
-    <None Include="json\json_valueiterator.inl">
-      <Filter>json</Filter>
+    <None Include="..\..\lib\json\json_valueiterator.inl">
+      <Filter>lib\json</Filter>
     </None>
   </ItemGroup>
 </Project>

@@ -4,7 +4,7 @@
 #include <string>
 #include <iostream>
 #include <fstream>
-#include "json/json.h"
+#include <lib/json/json.h>
 
 
 #define APP_URI               L"myapp"
