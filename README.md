@@ -7,7 +7,7 @@ You can register a custom url scheme at browser, for example, "magnet:?key=value
 
 
 
-### 1. IE & FireFox
+### 1. IE & Firefox
 Please read follow document link:
 
 http://msdn.microsoft.com/en-us/library/ie/aa767914(v=vs.85).aspx#app_reg
