@@ -18,7 +18,7 @@ http://msdn.microsoft.com/en-us/library/ie/aa767914(v=vs.85).aspx#app_reg
 ### 2. Chrome
  Editing value of 'excluded_schemes' in 'Local State' json file which follow path:
 
- %LOCAL_APPDATA%/Google/Chrome/User Data/Local State
+    %LOCAL_APPDATA%/Google/Chrome/User Data/Local State
  
  
 
