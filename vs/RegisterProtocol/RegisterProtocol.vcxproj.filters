@@ -11,8 +11,8 @@
     <ClCompile Include="..\..\lib\json\json_writer.cpp">
       <Filter>lib\json</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\protocol_handler\main.cpp">
-      <Filter>source\protocol_handler</Filter>
+    <ClCompile Include="..\..\source\protocol_handler.cpp">
+      <Filter>source</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -24,9 +24,6 @@
     </Filter>
     <Filter Include="source">
       <UniqueIdentifier>{b1652155-b9f1-4a94-acbb-82fc6e6c4f75}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="source\protocol_handler">
-      <UniqueIdentifier>{cf7031e1-1f22-4e79-b6a5-59890ba4c775}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -62,6 +59,9 @@
     </ClInclude>
     <ClInclude Include="..\..\lib\json\writer.h">
       <Filter>lib\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\protocol_handler.h">
+      <Filter>source</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
