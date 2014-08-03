@@ -4,8 +4,8 @@
 namespace sys {
 
 struct ProtocolInfo {
-  std::string uri;                            // URI scheme
-  std::string displayName;                    // Display name of Protocol
+  std::string uri;                            // URI scheme. 'myapp' of 'myapp:?key=value'
+  std::string displayName;                    // Display name of protocol
   std::string executablePath;                 // Your App.exe path
 };
 

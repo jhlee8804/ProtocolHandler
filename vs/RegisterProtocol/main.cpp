@@ -11,4 +11,7 @@ int main(int argc, const char* argv[]) {
 
   sys::ProtocolHandler handler;
   handler.Register(info);
+
+  // launch app from web browser:
+  // <a href="myapp?key=value">Launch</a>
 }
