@@ -95,7 +95,7 @@
     <ClCompile Include="..\..\lib\json\json_reader.cpp" />
     <ClCompile Include="..\..\lib\json\json_value.cpp" />
     <ClCompile Include="..\..\lib\json\json_writer.cpp" />
-    <ClCompile Include="..\..\source\protocol_handler.cpp" />
+    <ClCompile Include="..\..\source\protocol_handler_win.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
