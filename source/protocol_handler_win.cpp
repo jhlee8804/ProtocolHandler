@@ -6,8 +6,6 @@
 #include <json/json.h>
 
 
-#ifdef _WIN32
-
 // release UNICODE, _UNICODE
 #ifdef UNICODE
 #undef UNICODE
@@ -20,7 +18,6 @@
 
 #endif  // _UNICODE
 #endif  // UNICODE
-#endif  // _WIN32
 
 
 // NOTE: 관리자 권한 필요. 프로젝트 우측 클릭 -> Properties -> Linker -> Manifest File에서
@@ -30,8 +27,6 @@
 namespace sys {
 
 void ProtocolHandler::Register(ProtocolInfo &info) {
-  // Register custom protocol handler - Windows
-#ifdef _WIN32
   // 1. IE, FireFox
   {
     // http://msdn.microsoft.com/en-us/library/ie/aa767914(v=vs.85).aspx
@@ -44,7 +39,7 @@ void ProtocolHandler::Register(ProtocolInfo &info) {
         value.append(" Protocol");
         reg.SetStringValue(NULL, value.c_str());
       }
-      
+
       // set value. {URL Protocol: ""}
       reg.SetStringValue("URL Protocol", "");
 
@@ -109,22 +104,20 @@ void ProtocolHandler::Register(ProtocolInfo &info) {
       in.close();
 
       if (rewrite) {
-        bool killed = KillChromeProcess();
-
         std::ofstream out(filePath);
         out << root;
         out.close();
-
-        if (killed)
-          LaunchChromeProcess();
       }
     }
   }
-#endif
+}
+
+bool ProtocolHandler::IsRunningChromeProcess() {
+  HWND hwnd = ::FindWindow("Chrome_WidgetWin_1", NULL);
+  return hwnd != NULL;
 }
 
 bool ProtocolHandler::KillChromeProcess() {
-#ifdef _WIN32
   HANDLE hProcessHandle;
   ULONG nProcessID;
 
@@ -133,15 +126,12 @@ bool ProtocolHandler::KillChromeProcess() {
 
   hProcessHandle = ::OpenProcess(PROCESS_TERMINATE, FALSE, nProcessID);
   return ::TerminateProcess(hProcessHandle, 4) == TRUE ? true : false;
-#endif
 }
 
 void ProtocolHandler::LaunchChromeProcess() {
-#ifdef _WIN32
   ::ShellExecute(NULL, "open",
                  "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
                  NULL, NULL, SW_SHOW);
-#endif
 }
 
 } // namespace sys

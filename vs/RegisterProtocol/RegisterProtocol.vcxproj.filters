@@ -11,7 +11,7 @@
     <ClCompile Include="..\..\lib\json\json_writer.cpp">
       <Filter>lib\json</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\protocol_handler.cpp">
+    <ClCompile Include="..\..\source\protocol_handler_win.cpp">
       <Filter>source</Filter>
     </ClCompile>
   </ItemGroup>

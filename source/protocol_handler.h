@@ -11,9 +11,11 @@ struct ProtocolInfo {
 
 class ProtocolHandler {
 public:
+  // Register custom protocol handler to system
   virtual void Register(ProtocolInfo &info);
 
-protected:
+  // You need to Chrome restart if the your protocol must be registered
+  bool IsRunningChromeProcess();
   bool KillChromeProcess();
   void LaunchChromeProcess();
 };
