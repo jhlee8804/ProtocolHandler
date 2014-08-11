@@ -1,4 +1,4 @@
-#include "protocol_handler.h"
+ï»¿#include "protocol_handler.h"
 
 #include <string>
 #include <iostream>
@@ -23,8 +23,8 @@
 #endif  // _WIN32
 
 
-// NOTE: °ü¸®ÀÚ ±ÇÇÑ ÇÊ¿ä. ÇÁ·ÎÁ§Æ® ¿ìÃø Å¬¸¯ -> Properties -> Linker -> Manifest File¿¡¼­
-// UAC Execution levelÀ» highestAvailable (/level='highestAvailable')À¸·Î ÁöÁ¤.
+// NOTE: ê´€ë¦¬ì ê¶Œí•œ í•„ìš”. í”„ë¡œì íŠ¸ ìš°ì¸¡ í´ë¦­ -> Properties -> Linker -> Manifest Fileì—ì„œ
+// UAC Execution levelì„ highestAvailable (/level='highestAvailable')ìœ¼ë¡œ ì§€ì •.
 
 
 namespace sys {

@@ -1,4 +1,4 @@
-// RegisterProtocol.cpp : Defines the entry point for the console application.
+﻿// RegisterProtocol.cpp : Defines the entry point for the console application.
 //
 
 #include <protocol_handler.h>
