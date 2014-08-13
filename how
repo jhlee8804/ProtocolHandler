@@ -1,0 +1,120 @@
+[33mcommit cf71967dae29f790a65c0686eb4e20140550445b[m
+Author: unknown <jhlee.8804@gmail.com>
+Date:   Mon Aug 4 10:43:14 2014 +0900
+
+    separate cpp for windows
+
+[33mcommit b9a5fa6e23fda7df3ab63dcc6511d40cdda54832[m
+Author: JiHyung Lee <jhlee.8804@gmail.com>
+Date:   Sun Aug 3 23:55:49 2014 +0900
+
+    Update README.md
+
+[33mcommit 36b654d3b5ecad31fbfd58fcae00474e0d2a8e84[m
+Author: jhlee8804 <jhlee.8804@gmail.com>
+Date:   Sun Aug 3 23:46:53 2014 +0900
+
+    add comment
+
+[33mcommit c8d5362ebb21ac5ca6346ac7bbcc6cb002bc6a68[m
+Author: jhlee8804 <jhlee.8804@gmail.com>
+Date:   Sun Aug 3 23:39:17 2014 +0900
+
+    refactoring
+
+[33mcommit b562fa466ae5dc582d153964270e1ad4f9010625[m
+Author: jhlee8804 <jhlee.8804@gmail.com>
+Date:   Sun Aug 3 20:52:04 2014 +0900
+
+    refactoring
+
+[33mcommit 8329ff1cecb19cd1d44d13b7f6839a499e253358[m
+Author: jhlee8804 <jhlee.8804@gmail.com>
+Date:   Sun Aug 3 19:47:56 2014 +0900
+
+    refactoring
+
+[33mcommit a2155e3e1958a461e5d4d1ac1f1589be38c789ba[m
+Author: JiHyung Lee <jhlee.8804@gmail.com>
+Date:   Sun Aug 3 15:28:18 2014 +0900
+
+    Update README.md
+
+[33mcommit 06b236cdbac039468e545550acf4ed6073490204[m
+Author: JiHyung Lee <jhlee.8804@gmail.com>
+Date:   Sun Aug 3 15:26:19 2014 +0900
+
+    Update README.md
+
+[33mcommit 8e03f2809a559284a6bac831db88908755ea3f1d[m
+Author: JiHyung Lee <jhlee.8804@gmail.com>
+Date:   Sun Aug 3 15:16:50 2014 +0900
+
+    Delete ReadMe.txt
+
+[33mcommit 9af283881e0480d56f3ccb68c519ebd659fe3022[m
+Author: JiHyung Lee <jhlee.8804@gmail.com>
+Date:   Sun Aug 3 15:16:33 2014 +0900
+
+    Delete RegisterProtocol.vcxproj.user
+
+[33mcommit 1434bd1ccb046af28605514853cb23939a1cd52d[m
+Author: JiHyung Lee <jhlee.8804@gmail.com>
+Date:   Sun Aug 3 15:16:18 2014 +0900
+
+    Delete ReadMe.txt
+
+[33mcommit 0f5e7d4c68f0ee5473bb40e8d1448c52cfdbd992[m
+Author: jhlee8804 <jhlee.8804@gmail.com>
+Date:   Sun Aug 3 15:15:14 2014 +0900
+
+    added json library & protocol handler support chrome
+
+[33mcommit 433efbd0cddc90cce4ba943d32a591b244eb7846[m
+Author: jhlee8804 <jhlee.8804@gmail.com>
+Date:   Sun Aug 3 02:26:54 2014 +0900
+
+    get key & value from query string
+
+[33mcommit bcec1a6aee6d65a1624eafaf457441a4fbd6414b[m
+Author: jhlee8804 <jhlee.8804@gmail.com>
+Date:   Sun Aug 3 01:37:35 2014 +0900
+
+    update ignore
+
+[33mcommit 1d893d7ead3416e92b232c2d96684a910c30aa7e[m
+Author: jhlee8804 <jhlee.8804@gmail.com>
+Date:   Sun Aug 3 01:35:32 2014 +0900
+
+    tab to space
+
+[33mcommit cab7b148f138454a95166fb89aef8e832e2a9a11[m
+Author: JiHyung Lee <jhlee.8804@gmail.com>
+Date:   Sun Aug 3 01:28:50 2014 +0900
+
+    update readme
+
+[33mcommit d3cff1e5946223ff31b6977b0c70bda8b15c95f0[m
+Author: jhlee8804 <jhlee.8804@gmail.com>
+Date:   Sun Aug 3 01:02:52 2014 +0900
+
+    tab to space
+
+[33mcommit b3ab47aa534fadd162964fbb6c39d9b31a8acb35[m
+Merge: 6a306d0 c820cb8
+Author: jhlee8804 <jhlee.8804@gmail.com>
+Date:   Sun Aug 3 00:57:17 2014 +0900
+
+    Merge branch 'master' of https://github.com/jhlee8804/ProtocolHandler
+
+[33mcommit c820cb8cc3d76036fe480644bdee874645f06db5[m
+Author: JiHyung Lee <jhlee.8804@gmail.com>
+Date:   Sun Aug 3 00:52:54 2014 +0900
+
+    Initial commit
+
+[33mcommit 6a306d0dfa8323cbbde01b0192fc96bb7dca2f25[m
+Author: jhlee8804 <jhlee.8804@gmail.com>
+Date:   Sun Aug 3 00:47:48 2014 +0900
+
+    init

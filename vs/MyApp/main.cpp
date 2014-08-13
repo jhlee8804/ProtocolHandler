@@ -20,7 +20,7 @@ int main(int argc, const char* argv[]) {
     std::string key = (*i)[1].str();
     std::string value = (*i)[2].str();
     
-    std::cout << key << " : " << value << std::endl;
+    std::cout << key << ": " << value << std::endl;
   }
 
   std::getchar();
